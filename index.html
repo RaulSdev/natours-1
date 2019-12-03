@@ -86,9 +86,23 @@
                 </div>
                 <div class="col-1-of-2">
                     <div class="composition">
-                        <img src="img/nat-1-large.jpg" alt="photo 1" class="composition__photo composition__photo--p1">
+                        <img src="img/nat-1-large.jpg" alt="Photo 1"
+                            srcset="img/nat-1.jpg 300w, img/nat-1-large.jpg 1000w"
+                            sizes="(max-width: 56.25em) 20vw, (max-width:37.5em) 30vw, 300px"
+                            class="composition__photo composition__photo--p1">
+                        <img src="img/nat-2-large.jpg" alt="Photo 2"
+                            srcset="img/nat-2.jpg 300w, img/nat-2-large.jpg 1000w"
+                            sizes="(max-width: 56.25em) 20vw, (max-width:37.5em) 30vw, 300px"
+                            class="composition__photo composition__photo--p2">
+
+                        <img src="img/nat-3-large.jpg" alt="Photo 3"
+                            srcset="img/nat-3.jpg 300w, img/nat-3-large.jpg 1000w"
+                            sizes="(max-width: 56.25em) 20vw, (max-width:37.5em) 30vw, 300px"
+                            class="composition__photo composition__photo--p3">
+
+                        <!-- <img src="img/nat-1-large.jpg" alt="photo 1" class="composition__photo composition__photo--p1">
                         <img src="img/nat-2-large.jpg" alt="photo 2" class="composition__photo composition__photo--p2">
-                        <img src="img/nat-3-large.jpg" alt="photo 3" class="composition__photo composition__photo--p3">
+                        <img src="img/nat-3-large.jpg" alt="photo 3" class="composition__photo composition__photo--p3"> -->
                     </div>
                 </div>
             </div>
@@ -255,26 +269,27 @@
                 <video class="bg-video__content" autoplay muted loop>
                     <source src="img/video.mp4" type="video/mp4">
                     <source src="img/video.webm" type="video/webm">
-                        Your Browser is not supported!
+                    Your Browser is not supported!
                 </video>
             </div>
             <div class="u-center-text u-margin-bottom-big">
                 <h2 class="heading-secondary">
-                   We make people genuinely happy
+                    We make people genuinely happy
                 </h2>
             </div>
             <div class="row">
                 <div class="story">
                     <figure class="story__shape">
-                     <img src="img/nat-8.jpg" alt="testimonial-picture" class="story__img">   
-                    <figcaption class="story__caption">
-                        Mary Smith
-                    </figcaption>
-                   
+                        <img src="img/nat-8.jpg" alt="testimonial-picture" class="story__img">
+                        <figcaption class="story__caption">
+                            Mary Smith
+                        </figcaption>
+
                     </figure>
                     <div class="story__text">
                         <h3 class="heading-tertiary u-margin-bottom-small">I had the best week ever with my family</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis corrupti iusto voluptatem sequi modi sapiente quidem eligendi, laborum est, sit cupiditate!</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis corrupti iusto
+                            voluptatem sequi modi sapiente quidem eligendi, laborum est, sit cupiditate!</p>
                     </div>
                 </div>
             </div>
@@ -285,11 +300,12 @@
                         <figcaption class="story__caption">
                             Jack Wilson
                         </figcaption>
-            
+
                     </figure>
                     <div class="story__text">
                         <h3 class="heading-tertiary u-margin-bottom-small">Wow! My Life is completely different now</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis corrupti iusto voluptatem sequi modi
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis corrupti iusto
+                            voluptatem sequi modi
                             sapiente quidem eligendi, laborum est, sit cupiditate!</p>
                     </div>
                 </div>
@@ -304,43 +320,43 @@
         <section class="section-book">
             <div class="row">
                 <div class="book">
-                   <div class="book__form">
-                    <form action="#" class="form">
-                        <div class=" u-margin-bottom-medium">
-                            <h2 class="heading-secondary">
-                               Start Booking Now!
-                            </h2>
-                        </div>
-                        <div class="form__group">
-                            <input type="text" class="form__input" placeholder="Full Name" required>
-                            <label for="name" class="form__label">Full Name</label>
-                        </div>
-                        <div class="form__group">
-                            <input type="email" class="form__input" placeholder="Email Address" required>
-                            <label for="email" class="form__label">Email Address</label>
-                        </div>
-                        <div class="form__group u-margin-bottom-medium">
-                            <div class="form__radio-group">
-                                <input type="radio" class="form__radio-input" id="small" name="size">
-                                <label for="small" class="form__radio-label">
-                                    <span class="form__radio-button"></span>
-                                    Small tour group
-                                </label>
-                                
+                    <div class="book__form">
+                        <form action="#" class="form">
+                            <div class=" u-margin-bottom-medium">
+                                <h2 class="heading-secondary">
+                                    Start Booking Now!
+                                </h2>
                             </div>
-                            <div class="form__radio-group">
-                                <input type="radio" class="form__radio-input" id="large" name="size">
-                                <label for="large" class="form__radio-label">
-                                    <span class="form__radio-button"></span>
-                                    Large tour group
-                                </label>
+                            <div class="form__group">
+                                <input type="text" class="form__input" placeholder="Full Name" required>
+                                <label for="name" class="form__label">Full Name</label>
                             </div>
-                        </div>
-                        <div class="form__group">
-                            <button class="btn btn--green">Next Step &rarr;</button>
-                        </div>
-                    </form>
-                   </div> 
+                            <div class="form__group">
+                                <input type="email" class="form__input" placeholder="Email Address" required>
+                                <label for="email" class="form__label">Email Address</label>
+                            </div>
+                            <div class="form__group u-margin-bottom-medium">
+                                <div class="form__radio-group">
+                                    <input type="radio" class="form__radio-input" id="small" name="size">
+                                    <label for="small" class="form__radio-label">
+                                        <span class="form__radio-button"></span>
+                                        Small tour group
+                                    </label>
+
+                                </div>
+                                <div class="form__radio-group">
+                                    <input type="radio" class="form__radio-input" id="large" name="size">
+                                    <label for="large" class="form__radio-label">
+                                        <span class="form__radio-button"></span>
+                                        Large tour group
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="form__group">
+                                <button class="btn btn--green">Next Step &rarr;</button>
+                            </div>
+                        </form>
+                    </div>
                 </div>
             </div>
         </section>
@@ -349,7 +365,14 @@
 
     <footer class="footer">
         <div class="footer__logo-box">
-            <img src="img/logo-green-2x.png" alt="Full logo" class="footer__logo">
+
+            <picture class="footer__logo">
+                <source srcset="img/logo-green-small-1x.png 1x, img/logo-green-small-2x.png 2x  "
+                    media="(max-width: 37.5em)">
+                <img srcset="img/logo-green-1x.png 1x ,img/logo-green-2x.png 2x" alt="Full logo" class="footer__logo">
+
+            </picture>
+
         </div>
         <div class="row">
             <div class="col-1-of-2">
@@ -380,15 +403,19 @@
             <div class="popup__right">
                 <a href="#section-tours" class="popup__close">&times;</a>
                 <h2 class="heading-secondary u-margin-bottom-small">Start Booking now</h2>
-                <h3 class="heading-tertiary u-margin-bottom-small">Important &ndash; Please read these terms before booking</h3>
+                <h3 class="heading-tertiary u-margin-bottom-small">Important &ndash; Please read these terms before
+                    booking</h3>
                 <p class="popup__text">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla dictum sem vitae tristique consectetur. Sed ac dolor
-                    tristique, posuere lorem eu, iaculis purus. Praesent nec justo dignissim, interdum mauris vel, efficitur turpis.
-                    Maecenas id molestie ipsum. Nullam dictum aliquam quam ac convallis. Donec pulvinar nibh non est placerat, id faucibus
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla dictum sem vitae tristique
+                    consectetur. Sed ac dolor
+                    tristique, posuere lorem eu, iaculis purus. Praesent nec justo dignissim, interdum mauris vel,
+                    efficitur turpis.
+                    Maecenas id molestie ipsum. Nullam dictum aliquam quam ac convallis. Donec pulvinar nibh non est
+                    placerat, id faucibus
                     lectus posuere. Duis elit libero, tempus sit amet tincidunt a, mollis malesuada orci.
                 </p>
                 <a href="#" class="btn btn--green">Book now</a>
-            </div>     
+            </div>
         </div>
     </div>
 
